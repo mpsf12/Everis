@@ -1,0 +1,11 @@
+C:\Users\Clarivi\source\repos\Everis\Everis\bin\Debug\netcoreapp2.1\Everis.deps.json
+C:\Users\Clarivi\source\repos\Everis\Everis\bin\Debug\netcoreapp2.1\Everis.runtimeconfig.json
+C:\Users\Clarivi\source\repos\Everis\Everis\bin\Debug\netcoreapp2.1\Everis.runtimeconfig.dev.json
+C:\Users\Clarivi\source\repos\Everis\Everis\bin\Debug\netcoreapp2.1\Everis.dll
+C:\Users\Clarivi\source\repos\Everis\Everis\bin\Debug\netcoreapp2.1\Everis.pdb
+C:\Users\Clarivi\source\repos\Everis\Everis\obj\Debug\netcoreapp2.1\Everis.csprojAssemblyReference.cache
+C:\Users\Clarivi\source\repos\Everis\Everis\obj\Debug\netcoreapp2.1\Everis.csproj.CoreCompileInputs.cache
+C:\Users\Clarivi\source\repos\Everis\Everis\obj\Debug\netcoreapp2.1\Everis.AssemblyInfoInputs.cache
+C:\Users\Clarivi\source\repos\Everis\Everis\obj\Debug\netcoreapp2.1\Everis.AssemblyInfo.cs
+C:\Users\Clarivi\source\repos\Everis\Everis\obj\Debug\netcoreapp2.1\Everis.dll
+C:\Users\Clarivi\source\repos\Everis\Everis\obj\Debug\netcoreapp2.1\Everis.pdb
