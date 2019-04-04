@@ -74,29 +74,9 @@ C. ( ) Código não compila, pois temos um this no primeiro argumento do MudaTit
 O código funciona com a implementação das classes que estão faltando.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Script banco de dados
 
-CREATE TABLE maquinas.dbo.tb_empresa (
+CREATE TABLE Everis.dbo.tb_empresa (
   id int IDENTITY,
   NomeEmpresa varchar(50) NOT NULL,
   CONSTRAINT PK_tb_empresa_id PRIMARY KEY CLUSTERED (id)
@@ -105,11 +85,11 @@ ON [PRIMARY]
 GO
 
 CREATE UNIQUE INDEX KEY_tb_empresa_id
-  ON maquinas.dbo.tb_empresa (id)
+  ON Everis.dbo.tb_empresa (id)
   ON [PRIMARY]
 GO
 
-CREATE TABLE maquinas.dbo.tb_produto (
+CREATE TABLE Everis.dbo.tb_produto (
   Id int IDENTITY,
   NomeProduto varchar(255) NOT NULL,
   CONSTRAINT PK_tb_produto_Id PRIMARY KEY CLUSTERED (Id)
@@ -118,11 +98,11 @@ ON [PRIMARY]
 GO
 
 CREATE UNIQUE INDEX KEY_tb_produto_Id
-  ON maquinas.dbo.tb_produto (Id)
+  ON Everis.dbo.tb_produto (Id)
   ON [PRIMARY]
 GO
 
-CREATE TABLE maquinas.dbo.tb_produto_estoque (
+CREATE TABLE Everis.dbo.tb_produto_estoque (
   Id int IDENTITY,
   IdProduto int NOT NULL,
   IdEmpresa int NOT NULL,
@@ -133,7 +113,7 @@ CREATE TABLE maquinas.dbo.tb_produto_estoque (
 ON [PRIMARY]
 GO
 
-CREATE TABLE maquinas.dbo.tb_produto_movimentacao (
+CREATE TABLE Everis.dbo.tb_produto_movimentacao (
   Id int IDENTITY,
   IdProduto int NOT NULL,
   IdEmpresa int NOT NULL,
@@ -145,19 +125,18 @@ ON [PRIMARY]
 GO
 
 
-ALTER TABLE maquinas.dbo.tb_produto_estoque
+ALTER TABLE Everis.dbo.tb_produto_estoque
   ADD CONSTRAINT FK_tb_produto_estoque_IdEmpresa FOREIGN KEY (IdEmpresa) REFERENCES dbo.tb_empresa (id)
 GO
 
-ALTER TABLE maquinas.dbo.tb_produto_estoque
+ALTER TABLE Everis.dbo.tb_produto_estoque
   ADD CONSTRAINT FK_tb_produto_estoque_IdProduto FOREIGN KEY (IdProduto) REFERENCES dbo.tb_produto (Id)
 GO
 
-ALTER TABLE maquinas.dbo.tb_produto_movimentacao
+ALTER TABLE Everis.dbo.tb_produto_movimentacao
   ADD CONSTRAINT FK_tb_produto_movimentacao_IdEmpresa FOREIGN KEY (IdEmpresa) REFERENCES dbo.tb_empresa (id)
 GO
 
-ALTER TABLE maquinas.dbo.tb_produto_movimentacao
+ALTER TABLE Everis.dbo.tb_produto_movimentacao
   ADD CONSTRAINT FK_tb_produto_movimentacao_IdProduto FOREIGN KEY (IdProduto) REFERENCES dbo.tb_produto (Id)
 GO
-
